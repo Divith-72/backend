@@ -7,7 +7,7 @@ const connectdb = async () => {
         console.log("Attempting to connect to MongoDB Atlas...");
         
         // Connect WITHOUT the deprecated options
-        await mongoose.connect(process.env.MONGO_URL,{
+        await mongoose.connect(process.env.MONGO_URL ,{
               serverSelectionTimeoutMS: 10000, // Increased to 10 seconds
         });
         
